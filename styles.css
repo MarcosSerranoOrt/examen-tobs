@@ -34,6 +34,7 @@ body {
     margin-top: 25px;
 }
 
+
 .single-pricing {
     position: relative;
     text-align: center;
@@ -42,6 +43,12 @@ body {
     margin: 0;
     padding: 30px;
     border-radius: 25px;
+    box-shadow: 10px 7px 7px rgb(34, 34, 34);
+    transition: .5s;
+}
+.single-pricing:hover{
+    transform:translateY(-30px); 
+    transition: .5s;
 }
 
 .head-text {
@@ -71,6 +78,7 @@ body {
     font-weight: 300;
     font-size: 64px;
     line-height: 1;
+
 }
 
 .price-area span.duration {
@@ -136,4 +144,38 @@ ul, li {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+
+.pricing-container{
+    display: inline-block;
+    position: relative;
+    outline: 0;
+    white-space: nowrap;
+    margin: 5px;
+    padding: 0px 22px;
+    line-height: 40px;
+    background-color: #000000;
+    border-radius: 50px;
+    box-shadow: 5px 5px 7px  rgb(34, 34, 34);
+}
+.btn-pricing{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: 0;
+    white-space: nowrap;
+    margin: 5px;
+    padding: 0px 22px;
+    font-size: 14px;
+    line-height: 40px;
+    background-color: #1abc9c;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+}
+.monthly{
+    
 }
