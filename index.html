@@ -12,15 +12,15 @@
 
 </head>
 
-<body onload="changePlansMonthly()">
+<body onload="change_Plans_Monthly()">
 
     <div class="main-container">
         <h1>Pricing Toggle 1</h1>
         <div class="pricing-tab ">
             <div class="pricing-container">
                 <div class="row">
-                    <button class="btn-pricing changePrice" id="btn-Mensual"> Mensual</button>
-                    <button class="btn-pricing changePrice" id="btn-annuary">anual</button>
+                    <button class="btn-pricing changePrice" id="btn-Mensual"> Monthly</button>
+                    <button class="btn-pricing changePrice" id="btn-annuary">Annuary</button>
                 </div>
             </div>
         </div>
@@ -32,9 +32,12 @@
                             <div class="head-text">
                                 <h3 id="plan-basic">Basic</h3>
                             </div>
-                            <div class="price-area" id="price-basic">
-                                $11
-                                <span id="duration_basic" class="duration"> Per Day</span>
+                            <div class="image-area">
+                                <img class="images" src="images/basic.svg">
+                             </div>
+                            <div class="price-area">
+                                <span id="price-basic"></span>
+                                <span id="duration-basic" class="duration"></span>
                             </div>
                             <div class="feature-area">
                                 <ul>
@@ -47,18 +50,21 @@
                                 </ul>
                             </div>
                             <div class="btn-area">
-                                <a href="#">choose plan</a>
+                                <a href="#">sing up</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-pricing">
                             <div class="head-text">
-                                <h3 id="plan-popular">Popular</h3>
+                                <h3 id="plan-popular">Premium</h3>
                             </div>
-                            <div class="price-area" id="price-popular">
-                                $45 
-                                <span class="duration" id="duration-popular">Per Month</span>
+                            <div class="image-area">
+                                <img class="images" src="images/premium.svg">
+                             </div>
+                            <div class="price-area">
+                                <span id="price-popular"></span> 
+                                <span class="duration" id="duration-popular"></span>
                             </div>
                             <div class="feature-area">
                                 <ul>
@@ -71,17 +77,21 @@
                                 </ul>
                             </div>
                             <div class="btn-area">
-                                <a href="#">choose plan</a>
+                                <a href="#">sing up</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-pricing">
                             <div class="head-text">
-                                <h3 id="plan-professional">professional</h3>
+                                <h3 id="plan-professional">Business</h3>
                             </div>
-                            <div class="price-area" id="price-professional">
-                                $435 <span class="duration" id="duration-professional">Per year</span>
+                            <div class="image-area">
+                                <img class="images" src="images/business.svg">
+                             </div>
+                            <div class="price-area" >
+                                <span id="price-professional"></span> 
+                                <span class="duration" id="duration-professional"></span>
                             </div>
                             <div class="feature-area">
                                 <ul>
@@ -94,7 +104,7 @@
                                 </ul>
                             </div>
                             <div class="btn-area">
-                                <a href="#">choose plan</a>
+                                <a href="#">sing up</a>
                             </div>
                         </div>
                     </div>

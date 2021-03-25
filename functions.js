@@ -39,28 +39,42 @@ const botonesCambiarPrecio = document.querySelectorAll('button.changePrice');
 botonesCambiarPrecio.forEach(botton => botton.addEventListener('click', function (e) {
     var id = e.target.id;
     console.log(id)
-    if (id === "btn-annuary") {
+    if (id === "btn-annuary") {       
         change_plans_annuary()
+       
     } else if (id === "btn-Mensual") {
-
-        changePlansMonthly()
+          
+        change_Plans_Monthly()
     }
 }))
 
 
-function changePlansMonthly() {
-    document.getElementById("price-basic").innerHTML = array_prices_monthly[0].price;
-    document.getElementById("price-popular").innerHTML = array_prices_monthly[1].price;
-    document.getElementById("price-professional").innerHTML = array_prices_monthly[2].price;
-    document.getElementById("duration_basic").innerHTML = array_prices_monthly[2].duration;
-  
+function change_Plans_Monthly() {
+    
+    document.getElementById("price-basic").innerText = array_prices_monthly[0].price;
+    document.getElementById("price-popular").innerText = array_prices_monthly[1].price;
+    document.getElementById("price-professional").innerText = array_prices_monthly[2].price;
+    document.getElementById("duration-basic").innerText = array_prices_monthly[0].duration;
+    document.getElementById("duration-popular").innerText = array_prices_monthly[1].duration;
+    document.getElementById("duration-professional").innerText = array_prices_monthly[2].duration;
+    
+    document.getElementById("btn-annuary").style.backgroundColor='#1abc9c';
+    document.getElementById("btn-annuary").style.color='#e7faf4';
+    document.getElementById("btn-Mensual").style.color='#1abc9c';
+    document.getElementById("btn-Mensual").style.backgroundColor='#e7faf4';
 }
 
 function change_plans_annuary() {
-    console.log(document.querySelectorAll('span#duration_basic'))
+   
     document.getElementById("price-basic").innerText = "$" + array_prices_annuary[0].price;
     document.getElementById("price-popular").innerText = array_prices_annuary[1].price;
     document.getElementById("price-professional").innerText = array_prices_annuary[2].price;
-    
+    document.getElementById("duration-professional").innerText = array_prices_annuary[2].duration;
+    document.getElementById("duration-popular").innerText = array_prices_annuary[1].duration;
+    document.getElementById("duration-basic").innerText = array_prices_annuary[0].duration;  
+
+    document.getElementById("btn-annuary").style.backgroundColor='#e7faf4';
+    document.getElementById("btn-annuary").style.color='#1abc9c';
+    document.getElementById("btn-Mensual").style.color='#e7faf4';
+    document.getElementById("btn-Mensual").style.backgroundColor='#1abc9c';
 }
-document.getElementById("duration-professional").innerHTML = array_prices_monthly[2].duration;
